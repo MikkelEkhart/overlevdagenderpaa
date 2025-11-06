@@ -11,7 +11,7 @@
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #5a5b5e;
+  --color-menu-bg: #f8ada3;
   /* Links */
   --color-link-bg: #78766e;
   --color-link-hover: #fff; /* used */
@@ -28,7 +28,7 @@
 
   /* Tekst */
   --color-text: #000;
-  --color-text-inverted: #cdccc4;
+  --color-text-inverted: #000000;
 
   /*  Marginer */
   --margin-head-bottom: 5px;
@@ -63,7 +63,7 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #676161;
+  --color-info-bg: #ffffff;
   --color-infobox-1-bg: #cfcec6;
   --color-infobox-2-bg: #969995;
 }
