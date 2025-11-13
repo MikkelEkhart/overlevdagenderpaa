@@ -13,9 +13,9 @@
   /* Global menu */
   --color-menu-bg: #f8ada3;
   /* Links */
-  --color-link-bg: #78766e;
+  --color-link-bg: #c4d7ab;
   --color-link-hover: #fff; /* used */
-  --color-link-active: #99958f; /* used */
+  --color-link-active: #47433d; /* used */
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
@@ -23,8 +23,8 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #4b4545;
-  --color-headline-text-page: #42413d;
+  --color-headline-bg: #aee2f8;
+  --color-headline-text-page: #000000;
 
   /* Tekst */
   --color-text: #000;
@@ -37,13 +37,13 @@
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #8a8585;
+  --color-card-bg: #ffffff;
   --color-cta-card-bg: #d5d2d0;
   /* news-cards */
-  --color-news-bg: #dbdad4;
-  --color-news-bg-inverted: #585a5e;
-  --color-cta-newscard-bg: #787473;
-  --color-cta-newscard-bg-inverted: #7b7d83;
+  --color-news-bg: #c4d7ab;
+  --color-news-bg-inverted: #fcfbe1;
+  --color-cta-newscard-bg: #fcfbe1;
+  --color-cta-newscard-bg-inverted: #fcfbe1;
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
