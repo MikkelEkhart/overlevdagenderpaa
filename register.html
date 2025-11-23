@@ -1,81 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/custom.css" />
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/general.css" />
-    <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/burger.css" />
-    <link rel="stylesheet" href="css/cards.css" />
-    <link rel="stylesheet" href="css/form.css" />
-    <link rel="icon" type="image/png" href="img/fav.png" />
-    <title>Emergency Site</title>
-  </head>
-  <body id="register">
-    <header>
-      <nav>
-        <div id="logotype-wrapper" class="logo">
-          <a href="index.html"> LOGO-TYPE </a>
-        </div>
-        <ul class="menu">
-          <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
-          <li><a class="menuItem" href="register.html">Indberet</a></li>
-        </ul>
-        <button class="burger">
-          <span class="line"></span>
-          <span class="line"></span>
-          <span class="line"></span>
-        </button>
-      </nav>
-    </header>
 
-    <main>
-      <h1>INDBERET</h1>
-      <section id="form-section">
-        <article id="form-info">
-          <h2>Overskrift</h2>
-          <p>Tekst</p>
-        </article>
-        <form id="webform"></form>
-      </section>
-      <section id="form-summary">
-        <h2>Summary</h2>
-        <article>
-          <p class="placeholder">Opsummering</p>
-        </article>
-      </section>
-    </main>
-    <footer>
-      <nav class="some">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="another">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-      <nav class="yetanother">
-        <ul>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-          <li><a href="">link</a></li>
-        </ul>
-      </nav>
-    </footer>
-    <script src="js/burger.js"></script>
-    <!-- <script src="js/main.js"></script> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/custom.css" />
+  <link rel="stylesheet" href="css/fonts.css" />
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/burger.css" />
+  <link rel="stylesheet" href="css/cards.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="icon" type="image/png" href="img/fav.png" />
+
+  <title>Emergency Site</title>
+</head>
+
+<body id="register">
+  <header>
+    <nav>
+      <div id="logotype-wrapper" class="logo">
+        <a href="index.html"> LOGO-TYPE </a>
+      </div>
+      <ul class="menu">
+        <button id="theme-btn">Dark</button>
+        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <li><a class="menuItem" href="register.html">Indberet</a></li>
+      </ul>
+      <button class="burger">
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <h1>INDBERET</h1>
+    <section id="form-section">
+      <article id="form-info">
+        <h2>Overskrift</h2>
+        <p>Tekst</p>
+      </article>
+      <form id="webform">
+        <fieldset>
+          <legend>Dine oplysninger</legend>
+
+          <label for="navn">Navn</label>
+          <input type="text" id="navn" name="navn" placeholder="Dit navn" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Din emailadresse" required>
+
+          <button type="submit">Send oplysninger</button>
+        </fieldset>
+      </form>
+
+
+      <form>
+        <fieldset>
+          <legend>Forklar din aften</legend>
+
+          <label for="aften">Hvad skete der?</label>
+          <textarea id="aften" name="aften" rows="6" placeholder="Skriv din forklaring her..." required></textarea>
+
+          <button type="submit">Indsend</button>
+        </fieldset>
+      </form>
+
+      <form>
+        <fieldset>
+          <legend>Hvor mange genstande har du indtaget?</legend>
+
+          <label for="genstande">Antal genstande: <span id="antal">0</span></label><br>
+          <input type="range" id="genstande" name="genstande" min="0" max="30" value="0" />
+
+          <br><br>
+          <button type="submit">Indsend</button>
+        </fieldset>
+      </form>
+
+      <script>
+        const slider = document.getElementById("genstande");
+        const antal = document.getElementById("antal");
+
+        slider.addEventListener("input", () => {
+          antal.textContent = slider.value;
+        });
+      </script>
+    </section>
+    <section id="form-summary">
+
+      </article>
+    </section>
+  </main>
+  <footer>
+    <nav class="some">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="another">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+    <nav class="yetanother">
+      <ul>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+        <li><a href="">link</a></li>
+      </ul>
+    </nav>
+  </footer>
+  <script src="js/burger.js"></script>
+  <script src="js/dark.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+</body>
+
 </html>
