@@ -1,21 +1,24 @@
 :root {
+  color-scheme: light-dark;
+
   /* Colours */
-  --color-bg: #f7e989; /* page background /*
+  --color-bg: light-dark(#f7e989, #2e2d2d);
 
   /* Header */
-  --color-head-bg: #f8ada3;
+  --color-head-bg: light-dark(#f8ada3, #9e5f5f);
 
   /* Logotype */
-  --color-logotype-bg: #ac6f68;
-  --color-text-logotype: #030300;
+  --color-logotype-bg: light-dark(#ac6f68, #5d3a37);
+  --color-text-logotype: light-dark(#030300, #f4eae5);
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: #f8ada3;
+  --color-menu-bg: light-dark(#f8ada3, #9e5f5f);
+
   /* Links */
-  --color-link-bg: #c4d7ab;
-  --color-link-hover: #fff; /* used */
-  --color-link-active: #47433d; /* used */
+  --color-link-bg: light-dark(#c4d7ab, #556347);
+  --color-link-hover: light-dark(#ffffff, #cfc8b5);
+  --color-link-active: light-dark(#47433d, #d8d2c2);
   --border-radius-links: 1px;
 
   /* Headlines og rubrik */
@@ -23,27 +26,28 @@
   --font-sub1-size: 1rem;
   --font-h2-size: 1rem;
   --font-h3-size: 1rem;
-  --color-headline-bg: #aee2f8;
-  --color-headline-text-page: #000000;
+  --color-headline-bg: light-dark(#aee2f8, #476979);
+  --color-headline-text-page: light-dark(#000000, #ffffff);
 
   /* Tekst */
-  --color-text: #000;
-  --color-text-inverted: #000000;
+  --color-text: light-dark(#000000, #f5f5f5);
+  --color-text-inverted: light-dark(#000000, #ffffff);
 
-  /*  Marginer */
+  /* Marginer */
   --margin-head-bottom: 5px;
 
   /* Borders */
   --border-radius: 5px;
 
   /* Cards */
-  --color-card-bg: #ffffff;
-  --color-cta-card-bg: #d5d2d0;
-  /* news-cards */
-  --color-news-bg: #c4d7ab;
-  --color-news-bg-inverted: #fcfbe1;
-  --color-cta-newscard-bg: #fcfbe1;
-  --color-cta-newscard-bg-inverted: #fcfbe1;
+  --color-card-bg: light-dark(#ffffff, #3a3a3a);
+  --color-cta-card-bg: light-dark(#d5d2d0, #5b5856);
+
+  /* News-cards */
+  --color-news-bg: light-dark(#c4d7ab, #556347);
+  --color-news-bg-inverted: light-dark(#fcfbe1, #3f3d2e);
+  --color-cta-newscard-bg: light-dark(#fcfbe1, #3f3d2e);
+  --color-cta-newscard-bg-inverted: light-dark(#fcfbe1, #3f3d2e);
 
   /* Fonts */
   --font-family-sans: "Rubik", ui-sans-serif;
@@ -63,7 +67,17 @@
   --form-submit-size: 1rem;
 
   /* Infographics */
-  --color-info-bg: #ffffff;
-  --color-infobox-1-bg: #cfcec6;
-  --color-infobox-2-bg: #969995;
+  --color-info-bg: light-dark(#ffffff, #3a3a3a);
+  --color-infobox-1-bg: light-dark(#cfcec6, #5a5952);
+  --color-infobox-2-bg: light-dark(#969995, #4a4d49);
+
+  #site-logo {
+    height: 55px; /* lille */
+    width: auto;
+    display: block;
+  }
+}
+
+html.dark {
+  color-scheme: dark;
 }

@@ -17,15 +17,22 @@
 </head>
 
 <body id="frontpage">
+
+  <!-- HEADER MED LOGO -->
   <header>
     <nav>
       <div id="logotype-wrapper" class="logo">
-        <a href="index.html"> Tømmermænds Centralen </a>
+        <a href="index.html">
+          <img src="img/mikkel_logo.png" alt="logo" id="site-logo">
+        </a>
       </div>
+
       <ul class="menu">
-        <li><a class="menuItem" href="instruction.html">Nærkontakt </a></li>
+        <button id="theme-btn">Dark</button>
+        <li><a class="menuItem" href="instruction.html">Nærkontakt</a></li>
         <li><a class="menuItem" href="register.html">Indberet</a></li>
       </ul>
+
       <button class="burger">
         <span class="line"></span>
         <span class="line"></span>
@@ -33,16 +40,19 @@
       </button>
     </nav>
   </header>
+
   <section id="main-disclamer">
     <div id="main-disclamer-content">
-      <img src="img/mikkel_logo.png" alt="logo" class="logo" />
+      <img src="img/advarsel.png" alt="logo" class="logo">
       <div>
-
-        <p class="sub">Alle kender dem, ingen slipper for dem - tømmermændende hæler ind på os hver weekend, hvordan kan
-          det stoppes?</p>
+        <p class="sub">
+          Alle kender dem, ingen slipper for dem - tømmermændende hæler ind på os hver weekend,
+          hvordan kan det stoppes?
+        </p>
       </div>
     </div>
   </section>
+
   <main>
     <section id="daily">
       <article class="daily_card">
@@ -50,47 +60,94 @@
         <div class="daily_text">
           <h2>Tømmermænd...</h2>
           <p>
-            Tømmermændende er uundgåelige, og bliver slemmere jo ældre vi bliver. Heldigvis har vi skabt en lille 3
-            trins guide, som forhåbentlig hjælper dig på vej mod en friskere lørdag morgen.
+            Tømmermændende er uundgåelige, og bliver slemmere jo ældre vi bliver.
+            Heldigvis har vi skabt en lille 3 trins guide, som forhåbentlig hjælper dig
+            mod en friskere lørdag morgen.
           </p>
           <a href="" class="cta_btn">Se mere</a>
         </div>
       </article>
+
       <article class="daily_card">
-        <img src="img/Firefly_GeminilFlash.png" alt="foto" />
+        <img src="img/Firefly_GeminilFlash.png" alt="foto">
         <div class="daily_text">
           <h2>Lad os hjælpe</h2>
           <p>
-            Du kan bruge vores indberetter og fortælle os om din aften, og præcis hvor meget du fik at drikke (hvis du
-            husker det) - så giver vi dig personlig hjælp, og de bedste tips skræddersyet til din form for tømmermænd.
+            Du kan bruge vores indberetter og fortælle os om din aften – og præcis hvor meget
+            du fik at drikke (hvis du husker det). Så giver vi dig personlig hjælp og tips
+            skræddersyet til dine tømmermænd.
           </p>
           <a href="" class="cta_btn">Se mere</a>
         </div>
       </article>
     </section>
+
     <section id="breaking">
-      <article class="news_card">
-        <h3>Mand vågner med tømmermænd og ny tatovering</h3>
-        <p>“Står der virkelig ‘øl er min religion’ i Comic Sans?” spørger 24-årige Jonas, mens han overvejer at
-          konvertere til
-          vand.</p>
-        <img src="img/religion2.png" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
-      </article>
-      <article class="news_card">
-        <h3>Mand med tømmermænd lover aldrig at drikke igen</h3>
-        <p>...indtil nogen nævner “fredagsbar.”</p>
-        <img src="img/fredagsbar.png" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
-      </article>
-      <article class="news_card">
-        <h3>Mand åbner Instagram DM's fra i går
-        </h3>
-        <p>Sletter appen, flytter til Sverige og starter et nyt liv som Lars.</p>
-        <img src="img/lars.png" alt="news_img" />
-        <a class="cta_btn" href="">Læs mere</a>
-      </article>
+      <section>
+        <article class="news_card">
+          <h3>Mand vågner med tømmermænd og ny tatovering</h3>
+          <p>
+            “Står der virkelig ‘øl er min religion’ i Comic Sans?” spørger Jonas,
+            mens han overvejer at konvertere til vand.
+          </p>
+          <img src="img/religion2.png" alt="news_img">
+
+          <div popover id="dialog1">
+            <h3>Mand vågner med tømmermænd og ny tatovering</h3>
+            <p>
+              “Står der virkelig ‘øl er min religion’ i Comic Sans?” spørger Jonas, da han vågner
+              med tømmermænd og en tatovering han ikke kan huske. Vennerne fortæller, at han ville
+              “hellige sig øllets åndelige kraft”. Han overvejer nu at konvertere til vand og få
+              fjernet både tatovering og dårlige beslutninger.
+            </p>
+            <img src="img/religion2.png" alt="religion2">
+            <button popovertarget="dialog1" class="cta_btn">LUK</button>
+          </div>
+
+          <button popovertarget="dialog1" class="cta_btn">LÆS MERE</button>
+        </article>
+
+        <article class="news_card">
+          <h3>Mand med tømmermænd lover aldrig at drikke igen</h3>
+          <p>...indtil nogen nævner “fredagsbar.”</p>
+          <img src="img/fredagsbar.png" alt="news_img">
+
+          <div popover id="dialog2">
+            <h3>Mand med tømmermænd lover aldrig at drikke igen</h3>
+            <p>
+              Efter en aften fuld af "jeg drikker kun lige et par stykker" vågner Mads op med en
+              hovedpine, der kunne få en kirke til at ryste. Han sværger højtideligt aldrig at drikke
+              igen... indtil hans ven nævner ordet "fredagsbar", hvorefter han spontant genvinder sin
+              tro på øl.
+            </p>
+            <img src="img/fredagsbar.png" alt="fredagsbar">
+            <button popovertarget="dialog2" class="cta_btn">LUK</button>
+          </div>
+
+          <button popovertarget="dialog2" class="cta_btn">LÆS MERE</button>
+        </article>
+
+        <article class="news_card">
+          <h3>Mand åbner Instagram DM's fra i går</h3>
+          <p>Sletter appen, flytter til Sverige og starter et nyt liv som Lars.</p>
+          <img src="img/lars.png" alt="news_img">
+
+          <div popover id="dialog3">
+            <h3>Mand åbner Instagram DM's fra i går</h3>
+            <p>
+              Efter en hurtig scroll gennem nattens DM's indser Rasmus, at fremtiden ikke længere
+              findes i Danmark. Han pakker derfor tasken, ændrer navn til Lars og begynder sit nye liv
+              i Sverige, hvor ingen kender til hans beskeder, hans skam eller hans brug af emojis.
+            </p>
+            <img src="img/lars.png" alt="lars">
+            <button popovertarget="dialog3" class="cta_btn">LUK</button>
+          </div>
+
+          <button popovertarget="dialog3" class="cta_btn">LÆS MERE</button>
+        </article>
+      </section>
     </section>
+
   </main>
 
   <footer>
@@ -102,6 +159,7 @@
         <li><a href="">link</a></li>
       </ul>
     </nav>
+
     <nav class="another">
       <ul>
         <li><a href="">link</a></li>
@@ -110,6 +168,7 @@
         <li><a href="">link</a></li>
       </ul>
     </nav>
+
     <nav class="yetanother">
       <ul>
         <li><a href="">link</a></li>
@@ -119,8 +178,9 @@
       </ul>
     </nav>
   </footer>
+
   <script src="js/burger.js"></script>
-  <!-- <script src="js/main.js"></script> -->
+  <script src="js/dark.js"></script>
 </body>
 
 </html>

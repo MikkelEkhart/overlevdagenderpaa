@@ -82,3 +82,41 @@ footer ul {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
+/**************** Popover ********************/
+[popover] {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  &::backdrop {
+    backdrop-filter: blur(5px);
+  }
+}
+
+[popover] {
+  max-height: 90vh;
+  max-width: 50ch;
+  width: 90vw;
+}
+
+[popover] {
+  opacity: 0;
+  scale: 0.9; /* start lidt mindre */
+  transform-origin: center center;
+  transition: opacity 0.25s ease, scale 0.25s ease allow-discrete;
+}
+
+:popover-open {
+  opacity: 1;
+  scale: 1; /* fuld størrelse */
+
+  @starting-style {
+    opacity: 0;
+    scale: 0.9; /* samme som start for smooth fade-out */
+  }
+}
