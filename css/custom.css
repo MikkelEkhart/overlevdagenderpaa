@@ -8,12 +8,12 @@
   --color-head-bg: light-dark(#f8ada3, #9e5f5f);
 
   /* Logotype */
-  --color-logotype-bg: light-dark(#ac6f68, #5d3a37);
+  --color-logotype-bg: light-dark(#fa9588, #5d3a37);
   --color-text-logotype: light-dark(#030300, #f4eae5);
   --font-logotype-size: 2rem;
 
   /* Global menu */
-  --color-menu-bg: light-dark(#f8ada3, #9e5f5f);
+  --color-menu-bg: light-dark(#fa9588, #9e5f5f);
 
   /* Links */
   --color-link-bg: light-dark(#c4d7ab, #556347);
@@ -70,12 +70,12 @@
   --color-info-bg: light-dark(#ffffff, #3a3a3a);
   --color-infobox-1-bg: light-dark(#cfcec6, #5a5952);
   --color-infobox-2-bg: light-dark(#969995, #4a4d49);
+}
 
-  #site-logo {
-    height: 55px; /* lille */
-    width: auto;
-    display: block;
-  }
+#site-logo {
+  height: 40px; /* eller hvad du vil */
+  width: auto;
+  display: block;
 }
 
 html.dark {
